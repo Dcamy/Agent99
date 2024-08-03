@@ -1,0 +1,37 @@
+2024-08-03 08:31:05 - main.py - Agent99 - Dcamy - INFO - Starting the Chat99 application...
+2024-08-03 08:31:09 - main.py - Agent99 - Dcamy - INFO - Routing decision: {'model': 'llama-3.1-8b-instant', 'max_tokens': 256, 'temperature': 0.5, 'routing_explanation': 'Selected llama-3.1-8b-instant based on complexity (0.12) and context length (3 chars). Threshold: 0.7', 'question_type': 'open_ended', 'response_strategy': 'open_discussion'}
+2024-08-03 08:31:09 - main.py - Agent99 - Dcamy - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-08-03 08:31:09 - main.py - Agent99 - Dcamy - DEBUG - load_verify_locations cafile='C:\\iMOB\\.venv\\Lib\\site-packages\\certifi\\cacert.pem'
+2024-08-03 08:31:09 - main.py - Agent99 - Dcamy - DEBUG - Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'system', 'content': 'Respond naturally to the query, providing relevant information and insights.'}, {'role': 'user', 'content': 'Sup'}], 'model': 'llama-3.1-8b-instant', 'max_tokens': 256, 'temperature': 0.5}}
+2024-08-03 08:31:09 - main.py - Agent99 - Dcamy - DEBUG - Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+2024-08-03 08:31:09 - main.py - Agent99 - Dcamy - DEBUG - connect_tcp.started host='api.groq.com' port=443 local_address=None timeout=5.0 socket_options=None
+2024-08-03 08:31:09 - main.py - Agent99 - Dcamy - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001CD87F304D0>
+2024-08-03 08:31:09 - main.py - Agent99 - Dcamy - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x000001CD87CADAC0> server_hostname='api.groq.com' timeout=5.0
+2024-08-03 08:31:09 - main.py - Agent99 - Dcamy - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001CD87F28310>
+2024-08-03 08:31:09 - main.py - Agent99 - Dcamy - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-08-03 08:31:09 - main.py - Agent99 - Dcamy - DEBUG - send_request_headers.complete
+2024-08-03 08:31:09 - main.py - Agent99 - Dcamy - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-08-03 08:31:09 - main.py - Agent99 - Dcamy - DEBUG - send_request_body.complete
+2024-08-03 08:31:09 - main.py - Agent99 - Dcamy - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2024-08-03 08:31:10 - main.py - Agent99 - Dcamy - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sat, 03 Aug 2024 01:31:09 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'vary', b'Origin'), (b'x-ratelimit-limit-requests', b'14400'), (b'x-ratelimit-limit-tokens', b'131072'), (b'x-ratelimit-remaining-requests', b'14399'), (b'x-ratelimit-remaining-tokens', b'131043'), (b'x-ratelimit-reset-requests', b'6s'), (b'x-ratelimit-reset-tokens', b'13.275146ms'), (b'x-request-id', b'req_01j4axsbfdfktvcnvj17mcf12d'), (b'via', b'1.1 google'), (b'alt-svc', b'h3=":443"; ma=86400'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=3tZV1WT.YmDGVs6Fjf2nO327DyRN3F1OEq_rLIWe7h0-1722648669-1.0.1.1-m2wl9bmNxC1Ww46dS.eUz_Y9kLwFarLIGd.nL1NuAEqULbFnLrszE0minG9UCF3ayTtt4K8t0b6__ghrDXZSUA; path=/; expires=Sat, 03-Aug-24 02:01:09 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'8ad28be8be9ea183-BKK'), (b'Content-Encoding', b'gzip')])
+2024-08-03 08:31:10 - main.py - Agent99 - Dcamy - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-08-03 08:31:10 - main.py - Agent99 - Dcamy - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2024-08-03 08:31:10 - main.py - Agent99 - Dcamy - DEBUG - receive_response_body.complete
+2024-08-03 08:31:10 - main.py - Agent99 - Dcamy - DEBUG - response_closed.started
+2024-08-03 08:31:10 - main.py - Agent99 - Dcamy - DEBUG - response_closed.complete
+2024-08-03 08:31:10 - main.py - Agent99 - Dcamy - DEBUG - HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "200 OK" Headers({'date': 'Sat, 03 Aug 2024 01:31:09 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate', 'vary': 'Origin', 'x-ratelimit-limit-requests': '14400', 'x-ratelimit-limit-tokens': '131072', 'x-ratelimit-remaining-requests': '14399', 'x-ratelimit-remaining-tokens': '131043', 'x-ratelimit-reset-requests': '6s', 'x-ratelimit-reset-tokens': '13.275146ms', 'x-request-id': 'req_01j4axsbfdfktvcnvj17mcf12d', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=86400', 'cf-cache-status': 'DYNAMIC', 'set-cookie': '__cf_bm=3tZV1WT.YmDGVs6Fjf2nO327DyRN3F1OEq_rLIWe7h0-1722648669-1.0.1.1-m2wl9bmNxC1Ww46dS.eUz_Y9kLwFarLIGd.nL1NuAEqULbFnLrszE0minG9UCF3ayTtt4K8t0b6__ghrDXZSUA; path=/; expires=Sat, 03-Aug-24 02:01:09 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None', 'server': 'cloudflare', 'cf-ray': '8ad28be8be9ea183-BKK', 'content-encoding': 'gzip'})
+2024-08-03 08:31:10 - main.py - Agent99 - Dcamy - INFO - Model response: Sup! Not much, just hanging out. How about you?
+2024-08-03 08:31:10 - main.py - Agent99 - Dcamy - INFO - Generated response: Sup! Not much, just hanging out. How about you?
+2024-08-03 08:31:10 - main.py - Agent99 - Dcamy - DEBUG - entering code: StateBlock(line=0,level=0,tokens=0), 0, 1, False
+2024-08-03 08:31:10 - main.py - Agent99 - Dcamy - DEBUG - entering fence: StateBlock(line=0,level=0,tokens=0), 0, 1, False
+2024-08-03 08:31:10 - main.py - Agent99 - Dcamy - DEBUG - entering blockquote: StateBlock(line=0,level=0,tokens=0), 0, 1, False
+2024-08-03 08:31:10 - main.py - Agent99 - Dcamy - DEBUG - entering hr: StateBlock(line=0,level=0,tokens=0), 0, 1, False
+2024-08-03 08:31:10 - main.py - Agent99 - Dcamy - DEBUG - entering list: StateBlock(line=0,level=0,tokens=0), 0, 1, False
+2024-08-03 08:31:10 - main.py - Agent99 - Dcamy - DEBUG - entering reference: StateBlock(line=0,level=0,tokens=0), 0, 1, False
+2024-08-03 08:31:10 - main.py - Agent99 - Dcamy - DEBUG - entering html_block: StateBlock(line=0,level=0,tokens=0), 0, 1, False
+2024-08-03 08:31:10 - main.py - Agent99 - Dcamy - DEBUG - entering heading: StateBlock(line=0,level=0,tokens=0), 0, 1, False
+2024-08-03 08:31:10 - main.py - Agent99 - Dcamy - DEBUG - entering lheading: StateBlock(line=0,level=0,tokens=0), 0, 1, False
+2024-08-03 08:31:10 - main.py - Agent99 - Dcamy - DEBUG - entering paragraph: StateBlock(line=0,level=0,tokens=0), 0, 1, False
+2024-08-03 08:31:10 - main.py - Agent99 - Dcamy - INFO - Model response: Sup! Not much, just hanging out. How about you?
+2024-08-03 08:32:57 - main.py - Agent99 - Dcamy - DEBUG - close.started
+2024-08-03 08:32:57 - main.py - Agent99 - Dcamy - DEBUG - close.complete
